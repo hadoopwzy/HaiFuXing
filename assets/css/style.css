@@ -544,13 +544,13 @@ button:focus {
 .banner-content span {
   display: block;
   color: #252525;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 .banner-content h1 {
   color: #252525;
-  font-size: 80px;
+  font-size: 45px;
   margin-bottom: 10px;
   line-height: 100px;
 }
@@ -558,6 +558,7 @@ button:focus {
 .banner-content p {
   font-size: 20px;
   margin-bottom: 25px;
+  word-wrap: break-word;
 }
 
 .banner-content .banner-btn .banner-btn-right {
@@ -735,7 +736,7 @@ button:focus {
 }
 
 .section-title h2 {
-  font-size: 45px;
+  font-size: 38px;
   margin-bottom: 0;
 }
 
@@ -1236,6 +1237,7 @@ button:focus {
 
 .feature-area .feature-content .feature-top p {
   margin-bottom: 0;
+  word-wrap: break-word;
 }
 
 .feature-area .feature-content .feature-inner {
@@ -2201,7 +2203,7 @@ footer {
 }
 
 .section-title.two h2 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 .service-area .section-title.two {
@@ -2624,6 +2626,7 @@ footer {
 }
 
 .team-area .section-title.two h2 {
+  font-size: 37px;
   margin-bottom: 20px;
 }
 
@@ -2640,6 +2643,11 @@ footer {
   -webkit-animation: about-ani-one 18s infinite linear;
           animation: about-ani-one 18s infinite linear;
 }
+
+.team-area .team-content p{
+  word-wrap: break-word;
+}
+
 
 .team-area .team-item {
   margin-bottom: 30px;
@@ -4217,6 +4225,7 @@ footer {
 
 .design-area.two .design-content p {
   margin-bottom: 10px;
+  word-wrap: break-word;
 }
 
 .design-area.two .design-content p:last-child {
@@ -5488,12 +5497,13 @@ footer {
 
 .contact-info-area .info-item .mail-call li a {
   display: block;
-  color: #2948ff;
+  color: #252525;
   font-size: 22px;
+  line-height: 1.8;
 }
 
 .contact-info-area .info-item .mail-call li a:hover {
-  color: #252525;
+  color: #2948ff;
 }
 
 .contact-info-area .info-item .social-item {
