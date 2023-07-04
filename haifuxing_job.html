@@ -266,13 +266,17 @@
                             </div> -->
                             <div class="cat widget-item">
                                 <h3>招聘类别</h3>
-                                <ul>
+                                <ul id="accordionExample" class="accordion">
                                     <li>
-                                        <a href="#">社会招聘</a>
+                                        <a href="#" class="highlight" onclick="toggleCollapse(event, 'recruitment-social',this)" data-toggle="collapse" data-target="#recruitment-social" aria-expanded="true" aria-controls="recruitment-social">
+                                        社会招聘
+                                        </a>
                                         <!-- <span>(1)</span> -->
                                     </li>
                                     <li>
-                                        <a href="#">校园招聘</a>
+                                        <a href="#"  onclick="toggleCollapse(event, 'recruitment-campus',this)" data-toggle="collapse" data-target="#recruitment-campus" aria-expanded="false" aria-controls="recruitment-campus">
+                                        校园招聘
+                                        </a>
                                         <!-- <span>(4)</span> -->
                                     </li>
                                     <!-- <li>
@@ -317,93 +321,12 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    
+                    <!-- 岗位信息 -->
+                    <div  class="col-lg-8">
                         <div class="details-item">
-                            <!-- <div class="details-img">
-                                <h4>30 <span>Sep</span></h4>
-                                <img src="assets/img/blog-details.jpg" alt="Details">
-                                <h2>Multiple Companies For Collecting Emails</h2>
-                                <p class="paragraph-d"><span>D</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidunt ut labore et dolore plicabo. Nemo enim ipsam voluptatem quia voluptas sit aspertur aut odit aut quia consequuntur magni  enim ipsam voluptatem quia voluptas</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore plicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            </div> -->
-                            <!-- <div class="details-quote">
-                                <i class="flaticon-left-quote"></i>
-                                <h3>I see SEO becoming a normalized marketing tactic, the same way TV, radio, and print are traditionally</h3>
-                                <span>HERBERT BAYARD SWOPE</span>
-                            </div> -->
-                            <!-- <div class="details-digital">
-                                <h3>Digital Cost Is Effective Strategy</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                                <p>cia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem tem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                            </div> -->
-                            <!-- <div class="details-text-img">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <img src="assets/img/blog-details2.jpg" alt="Details">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <img src="assets/img/blog-details3.jpg" alt="Details">
-                                    </div>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore plicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                            </div> -->
-                            <!-- <div class="details-tags">
-                                <div class="row">
-                                    <div class="col-lg-7">
-                                        <div class="left">
-                                            <ul>
-                                                <li>
-                                                    <span>Tags:</span>
-                                                </li>
-                                                <li>
-                                                    <a href="#">#SEO</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">#Business</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">#Internet</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">#Property</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <div class="right">
-                                            <ul>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class='bx bxl-facebook'></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class='bx bxl-twitter'></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class='bx bxl-instagram'></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class='bx bxl-pinterest-alt'></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" target="_blank">
-                                                        <i class='bx bxl-youtube'></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="details-user">
+                            <!-- 社会招聘 -->
+                            <div id="recruitment-social" class="collapse show details-user"  data-parent="#accordionExample">
                                 <img src="assets/img/blog-details4.jpg" alt="Details">
                                 <img src="assets/img/blog-details5.jpg" alt="Details">
                                 <img src="assets/img/blog-details6.jpg" alt="Details">
@@ -462,7 +385,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="details-user">
+                            
+                            <!-- 校园招聘 -->
+                            <div id="recruitment-campus" class="collapse details-user" data-parent="#accordionExample">
                                 <img src="assets/img/blog-details4.jpg" alt="Details">
                                 <img src="assets/img/blog-details5.jpg" alt="Details">
                                 <img src="assets/img/blog-details6.jpg" alt="Details">
@@ -470,7 +395,7 @@
                                     <div class="row align-items-end">
                                         <div class="col-lg-6">
                                             <div class="top-left">
-                                                <h3>数据库开发工程师</h3>
+                                                <h3>软件开发实习生</h3>
                                                 <!-- <span>Author, Writer</span> -->
                                             </div>
                                         </div>
@@ -521,102 +446,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="details-card">
-                                <div class="row">
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="left">
-                                            <span>Jun 12, 2020 / SEO</span>
-                                            <p>Successful digital marketer does first to ensure they get</p>
-                                            <a href="#">
-                                                <i class='bx bx-right-arrow-alt'></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6">
-                                        <div class="left">
-                                            <span>April 19, 2020 / Web</span>
-                                            <p>Marketer who knows how to execute their campaigns</p>
-                                            <a href="#">
-                                                <i class='bx bx-right-arrow-alt'></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="details-comment">
-                                <h2>Comments <span>(02)</span></h2>
-                                <ul>
-                                    <li>
-                                        <img src="assets/img/blog-details4.jpg" alt="Details">
-                                        <h3>Devit Killer</h3>
-                                        <span>January 12, 2020</span>
-                                        <p>Software hack from an initial feasibility study, continuing through l implna business you have to be But we know there's a better</p>
-                                        <a href="#">Reply</a>
-                                    </li>
-                                    <li>
-                                        <img src="assets/img/blog-details7.jpg" alt="Details">
-                                        <h3>Morah Jein</h3>
-                                        <span>January 13, 2020</span>
-                                        <p>Software hack from an initial feasibility study, continuing through l implna business you have to be But we know there's a better</p>
-                                        <a href="#">Reply</a>
-                                    </li>
-                                </ul>
-                            </div> -->
-                            <!-- <div class="details-form">
-                                <h2>Leave A Comment</h2>
-                                <form>
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label>
-                                                    <i class='bx bx-user'></i>
-                                                </label>
-                                                <input type="text" class="form-control" placeholder="Name*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label>
-                                                    <i class='bx bx-mail-send'></i>
-                                                </label>
-                                                <input type="email" class="form-control" placeholder="Email*">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label>
-                                                    <i class='bx bx-phone-call'></i>
-                                                </label>
-                                                <input type="text" class="form-control" placeholder="Phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label>
-                                                    <i class='bx bx-world'></i>
-                                                </label>
-                                                <input type="text" class="form-control" placeholder="Website">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="form-group">
-                                                <label>
-                                                    <i class='bx bx-message-square-detail'></i>
-                                                </label>
-                                                <textarea name="your-message" rows="10" class="form-control" placeholder="Write Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <button type="submit" class="cmn-btn btn">
-                                                Post A Comment
-                                                <i class='bx bx-plus'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div> -->
+                            
                         </div>
                     </div>
+
                     
                 </div>
             </div>
@@ -772,5 +605,7 @@
         <script src="assets/js/wow.min.js"></script>
         <!-- Custom JS -->
         <script src="assets/js/custom.js"></script>
+        <!-- 设置类别跳转 -->
+        <script src="assets/js/haifuxing_job.js"></script>
     </body>
 </html>

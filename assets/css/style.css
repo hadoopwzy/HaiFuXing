@@ -5323,6 +5323,10 @@ footer {
   color: #2948ff;
 }
 
+.widget-area .cat ul li a.highlight {
+  color: #2948ff;
+}
+
 .widget-area .cat ul li span {
   display: inline-block;
   position: absolute;
