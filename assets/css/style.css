@@ -3644,6 +3644,10 @@ footer {
   border-radius: 5px;
 }
 
+.portfolio-area .portfolio-item p {
+  word-wrap: break-word;
+}
+
 .portfolio-area .portfolio-item .portfolio-inner {
   background-color: #fff;
   border-radius: 5px;
@@ -3675,6 +3679,7 @@ footer {
 .portfolio-area .portfolio-item .portfolio-inner h3 a {
   color: #2a284f;
 }
+
 
 .portfolio-area .portfolio-item .portfolio-inner h3 a:hover {
   color: #2948ff;
