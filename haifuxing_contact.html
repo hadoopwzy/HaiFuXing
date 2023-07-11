@@ -283,17 +283,17 @@
                                 <label>
                                     <i class='bx bx-user'></i>
                                 </label>
-                                <input type="text" name="name" id="name" class="form-control" placeholder="姓名" required data-error="Please enter your name">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="您的姓名"  data-error="请输入您的姓名">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
-
+                        
                         <div class="col-sm-6 col-lg-6">
                             <div class="form-group">
                                 <label>
                                     <i class='bx bx-mail-send'></i>
                                 </label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="邮箱" required data-error="Please enter your email">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="您的邮箱"  data-error="请正确输入您的邮箱">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -303,7 +303,7 @@
                                 <label>
                                     <i class='bx bx-phone-call'></i>
                                 </label>
-                                <input type="text" name="phone_number" id="phone_number" placeholder="联系电话" required data-error="Please enter your number" class="form-control">
+                                <input type="text" name="phone_number" id="phone_number" placeholder="您的联系电话"  data-error="请正确输入您的电话号码" class="form-control">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -313,7 +313,7 @@
                                 <label>
                                     <i class='bx bxs-edit'></i>
                                 </label>
-                                <input type="text" name="msg_subject" id="msg_subject" class="form-control" placeholder="主题" required data-error="Please enter your subject">
+                                <input type="text" name="msg_subject" id="msg_subject" class="form-control" placeholder="主题"  data-error="请输入您的主题">
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
@@ -323,17 +323,17 @@
                                 <label>
                                     <i class='bx bx-comment-detail'></i>
                                 </label>
-                                <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="留言" required data-error="Write your message"></textarea>
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="留言"  data-error="请写下你的留言"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
 
-                        <div class="col-lg-12 col-md-12">
+                        <!-- <div class="col-lg-12 col-md-12">
                             <div class="form-group">
                                 <div class="form-check agree-label">
                                     <input
                                         name="gridCheck"
-                                        value="I agree to the terms and privacy policy."
+                                        value="我同意条款和隐私政策。"
                                         class="form-check-input"
                                         type="checkbox"
                                         id="gridCheck"
@@ -345,10 +345,10 @@
                                     <div class="help-block with-errors gridCheck-error"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-md-12 col-lg-12">
-                            <button type="submit" class="btn cmn-btn">
+                            <button id="contact_button" type="submit" class="btn cmn-btn">
                                 <i class='bx  bx-send'></i>
                                 发送消息
                             </button>
@@ -583,5 +583,7 @@
             }
             window.onload = initMap
         </script>
+        <script src="assets/js/haifuxing_index.js"></script>
+        <script src="assets/js/haifuxing_contact.js"></script>
     </body>
 </html>

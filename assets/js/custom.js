@@ -35,27 +35,27 @@ jQuery(function ($) {
 	});
 
 	// Partner Slider JS
-	$('.partner-slider').owlCarousel({
-		loop: true,
-		margin: 0,
-		nav: false,
-		dots: false,
-		smartSpeed: 1000,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive:{
-			0:{
-				items: 2,
-			},
-			600:{
-				items: 3,
-			},
-			1000:{
-				items: 6,
-			}
-		}
-	});
+	// $('.partner-slider').owlCarousel({
+	// 	loop: true,
+	// 	margin: 0,
+	// 	nav: false,
+	// 	dots: false,
+	// 	smartSpeed: 1000,
+	// 	autoplay: true,
+	// 	autoplayTimeout: 4000,
+	// 	autoplayHoverPause: true,
+	// 	responsive:{
+	// 		0:{
+	// 			items: 2,
+	// 		},
+	// 		600:{
+	// 			items: 3,
+	// 		},
+	// 		1000:{
+	// 			items: 6,
+	// 		}
+	// 	}
+	// });
 
 	// Support Slider JS
 	$('.support-slider').owlCarousel({
@@ -108,21 +108,21 @@ jQuery(function ($) {
 	});
 
 	// Testimonials Slider JS
-	$('.testimonials-slider').owlCarousel({
-		items: 1,
-		loop: true,
-		margin: 20,
-		nav: true,
-		dots: false,
-		smartSpeed: 1000,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		navText: [
-			"<i class='bx bx-left-arrow-alt'></i>",
-			"<i class='bx bx-right-arrow-alt'></i>"
-		],
-	});
+	// $('.testimonials-slider').owlCarousel({
+	// 	items: 1,
+	// 	loop: true,
+	// 	margin: 20,
+	// 	nav: true,
+	// 	dots: false,
+	// 	smartSpeed: 1000,
+	// 	autoplay: true,
+	// 	autoplayTimeout: 4000,
+	// 	autoplayHoverPause: true,
+	// 	navText: [
+	// 		"<i class='bx bx-left-arrow-alt'></i>",
+	// 		"<i class='bx bx-right-arrow-alt'></i>"
+	// 	],
+	// });
 
 	// Team Share JS
 	$('.share-btn').on('click', function(){

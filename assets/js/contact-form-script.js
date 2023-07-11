@@ -7,7 +7,7 @@
         if (event.isDefaultPrevented()) {
             // handle the invalid form...
             formError();
-            submitMSG(false, "Did you fill in the form properly?");
+            submitMSG(false, "请您正确填写表格");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -15,9 +15,8 @@
         }
     });
 
-
+// Initiate Variables With Form Content
     function submitForm(){
-        // Initiate Variables With Form Content
         var name = $("#name").val();
         var email = $("#email").val();
         var msg_subject = $("#msg_subject").val();
@@ -25,19 +24,19 @@
         var message = $("#message").val();
 
 
-        $.ajax({
-            type: "POST",
-            url: "assets/php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
-            success : function(text){
-                if (text == "success"){
-                    formSuccess();
-                } else {
-                    formError();
-                    submitMSG(false,text);
-                }
-            }
-        });
+        // $.ajax({
+        //     type: "POST",
+        //     url: "assets/php/form-process.php",
+        //     data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&phone_number=" + phone_number + "&message=" + message,
+        //     success : function(text){
+        //         if (text == "success"){
+        //             formSuccess();
+        //         } else {
+        //             formError();
+        //             submitMSG(false,text);
+        //         }
+        //     }
+        // });
     }
 
     function formSuccess(){
