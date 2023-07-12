@@ -83,7 +83,7 @@
                                                     <h2>'+project.name+'</h2>\
                                                     <p>'+project.content+'</p>\
                                                 </div>\
-                                                <a href="haifuxing_project_content.html?id='+project.id+'" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
+                                                <a href="haifuxing_projects.html" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
                                                 </a>\
                                             </div>\
                                         </div>'

@@ -23,13 +23,15 @@ var host = "http://127.0.0.1:8123"
       banners.forEach(function (banner, index){
         const index_content_html='<div class="d-table-cell">\
                                     <div class="container-fluid">\
-                                        <div class="banner-content">\
-                                            <span>\
-                                                <img src="assets/img/sass/banner-shape4.png" alt="Shape">'+banner.sub_title1+'</span>\
-                                            <h1>'+banner.main_title+'</h1>\
-                                            <p class="col-lg-8">'+banner.content+'</p>\
-                                            <div class="banner-btn">\
-                                                <a href="#" class="cmn-btn">开始项目<i class="bx bx-plus"></i></a>\
+                                        <div class="row">\
+                                            <div class="banner-content p-5">\
+                                                <span>\
+                                                    <img src="assets/img/sass/banner-shape4.png" alt="Shape">'+banner.sub_title1+'</span>\
+                                                <h1>'+banner.main_title+'</h1>\
+                                                <p class="col-lg-8">'+banner.content+'</p>\
+                                                <div class="banner-btn">\
+                                                    <a href="haifuxing_contact.html" class="cmn-btn">开始项目<i class="bx bx-plus"></i></a>\
+                                                </div>\
                                             </div>\
                                         </div>\
                                     </div>\
@@ -59,7 +61,7 @@ var host = "http://127.0.0.1:8123"
                                                 <h2>'+project.name+'</h2>\
                                                 <p>'+project.abstract+'</p>\
                                             </div>\
-                                            <a href="haifuxing_project_content.html?id='+project.id+'" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
+                                            <a href="haifuxing_projects.html" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
                                             </a>\
                                         </div>\
                                     </div>'

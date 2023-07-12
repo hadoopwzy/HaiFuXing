@@ -4165,12 +4165,30 @@ footer {
 /*-- End Footer --*/
 /*----- End Digital CSS -----*/
 /*----- About CSS -----*/
-.page-title-area {
+/* .page-title-area {
   height: 430px;
   text-align: center;
   background-color: #2948ff;
   position: relative;
   overflow: hidden;
+} */
+.page-title-area {
+  height: 430px;
+  text-align: center;
+  background-image: linear-gradient(to top, #2948ff, #00a8cc);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-title-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(41, 72, 255, 0.4); 
+  z-index: 1;
 }
 
 .page-title-area .bg-text span {
