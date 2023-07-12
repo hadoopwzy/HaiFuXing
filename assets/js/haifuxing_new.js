@@ -48,11 +48,6 @@
                                                 <a href="haifuxing_new_content.html?id='+new_id.id+'">'+new_id.new_title+'</a>\
                                             </h3>\
                                             <a href="haifuxing_new_content.html?id='+new_id.id+'"><p>'+new_id.abstract+'</p></a>\
-                                            <ul class="bottom">\
-                                                <li>\
-                                                    <img src="'+host+new_id.img+'" alt="Blog">\
-                                                </li>\
-                                            </ul>\
                                         </div>\
                                     </div>'
                     $('.news').append(news_html)

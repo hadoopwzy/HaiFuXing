@@ -20,7 +20,7 @@
             abouts.forEach(function(about,index){
                const about_html = '<div class="section-title two">\
                                         <span class="sub-title">'+about.sub_title+'</span>\
-                                        <h2>'+about.main_title+'</h2>\
+                                        <h1>'+about.main_title+'</h1>\
                                     </div>\
                                     <p>'+about.content+'</p>'
                 $('.about').append(about_html)
@@ -32,8 +32,7 @@
 // ===================================我们的团队=======================================>、
             teams.forEach(function(team,index){
                 const team_html = '<div class="section-title two">\
-                                        <span class="sub-title">'+team.main_title+'</span>\
-                                        <h2>'+team.sub_title+'</h2>\
+                                        <h2>'+team.main_title+'</h2>\
                                         <p>'+team.content+'</p>\
                                     </div>\
                                     <a href="team.html" class="cmn-btn">了解更多<i class="bx bx-plus"></i></a>'

@@ -306,10 +306,10 @@ button:focus {
 }
 
 .banner-area .banner-shape img:nth-child(1) {
-  top: 145px;
+  top: 250px;
   right: 0;
   z-index: -1;
-  max-width: 885px;
+  max-width: 785px;
 }
 
 .banner-area .banner-shape img:nth-child(2) {
@@ -740,6 +740,18 @@ button:focus {
 .section-title h2 {
   font-size: 38px;
   margin-bottom: 0;
+  color: #000074;
+  background-color: #d9e3ff;
+  border-radius: 30px;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.section-title h1 {
+  font-size: 38px;
+  margin-bottom: 0;
+  color: #2a284f;
 }
 
 .service-area {
@@ -3326,8 +3338,13 @@ footer {
 }
 
 .section-title.three h2 {
-  font-size: 40px;
-  color: #2a284f;
+  font-size: 30px;
+  color: #000074;
+  background-color: #d9e3ff;
+  border-radius: 30px;
+  padding: 5px 15px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 /*-- End Service --*/
