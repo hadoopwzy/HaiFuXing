@@ -15,7 +15,7 @@ var host = "http://127.0.0.1:8123"
       // 请求成功后的回调
       console.log(retdata) // 输出服务器响应结果
       var banners = retdata['result']['banners']
-      var projects = retdata['result']['projects']
+      var products = retdata['result']['products']
       var partner_contents = retdata['result']['partner_contents']
       var partners = retdata['result']['partners']
       var news = retdata['result']['news']
@@ -40,45 +40,36 @@ var host = "http://127.0.0.1:8123"
         $('.index_banner').attr('src',host+banner.img)
       })
 
-      // ===================================遍历项目列表=======================================>
-      let project_num = 0;
-      projects.forEach(function (project, index){
-        // 项目标号
-        project_num += 1
-        let project_num_id;
-        if (project_num>10){
-            project_num_id = string(project_num);
-        }
-        else{
-            project_num_id = '0'+project_num;
-        }
-
-        // 项目内容
-        const project_content_html='<div class="col-lg-6">\
+      // ===================================遍历产品列表=======================================>
+      let product_num = 0;
+      products.forEach(function (product, index){
+        
+        // 产品内容
+        const product_content_html='<div class="col-lg-6">\
                                         <div class="feature-content">\
                                             <div class="feature-top">\
-                                                <span>'+project_num_id+'</span>\
-                                                <h2>'+project.name+'</h2>\
-                                                <p>'+project.abstract+'</p>\
+                                                <h2>'+product.name+'</h2>\
+                                                <p>'+product.abstract+'</p>\
                                             </div>\
-                                            <a href="haifuxing_projects.html" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
+                                            <a href="haifuxing_product_content.html?id='+product.id+'" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
                                             </a>\
                                         </div>\
                                     </div>'
 
-        // 项目封面
-        const project_img_html='<div class="col-lg-6">\
+        // 产品封面
+        const product_img_html='<div class="col-lg-6">\
                                     <div class="feature-img">\
-                                        <img src="'+host+project.img+'" alt="Feature">\
+                                        <img src="'+host+product.img+'" alt="Feature">\
                                     </div>\
                                 </div>'
-        if (project_num%2==0){
-            $('.projects').append(project_img_html)
-            $('.projects').append(project_content_html)
+        product_num += 1
+        if (product_num%2==0){
+            $('.products').append(product_img_html)
+            $('.products').append(product_content_html)
         }
         else{
-            $('.projects').append(project_content_html)
-            $('.projects').append(project_img_html)
+            $('.products').append(product_content_html)
+            $('.products').append(product_img_html)
         }
       })
 
@@ -160,11 +151,6 @@ var host = "http://127.0.0.1:8123"
                                       <a href="haifuxing_new_content.html?id='+new_id.id+'">'+new_id.name+'</a>\
                                   </h3>\
                                   <a href="haifuxing_new_content.html?id='+new_id.id+'"><p>'+new_id.abstract+'</p></a>\
-                                  <ul class="bottom">\
-                                      <li>\
-                                          <img src="'+host+new_id.img+'" alt="Blog">\
-                                      </li>\
-                                  </ul>\
                               </div>\
                           </div>'
         $('.new').append(news_html)
