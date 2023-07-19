@@ -1,5 +1,5 @@
 // var host = 'http://yichuang.hsturing.com'
-var host = "http://127.0.0.1:8123"
+// var host = "http://127.0.0.1:8123"
 
 ;(function ($) {
   'use strict'

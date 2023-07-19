@@ -1,10 +1,8 @@
-var host = "https://app.haifuxing.com"
-// var host = "http://120.25.165.230:8868/"
-
+var host = "https://app.haifuxing.com";
 ;(function ($) {
   'use strict'
   // console.log(response);
-
+  console.log(host)
   $.ajax({
     // 使用POST方法向host+/getIndexData发送JSON数据{"params":{}}，并且设置请求的数据类型为 JSON
     type: 'POST',

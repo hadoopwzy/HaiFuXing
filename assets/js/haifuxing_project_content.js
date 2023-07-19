@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    var host = "http://127.0.0.1:8123";
+    // var host = "http://127.0.0.1:8123";
 
     // console.log(response);
 
