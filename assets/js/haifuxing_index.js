@@ -1,4 +1,5 @@
 var host = "https://app.haifuxing.com";
+
 ;(function ($) {
   'use strict'
   // console.log(response);
