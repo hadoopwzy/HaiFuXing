@@ -23,13 +23,13 @@ var host = "http://127.0.0.1:8123"
         $('.company_email').text(message.email)
 
         const company_message_html='<li>\
-                                        <a><i class="bx bx-map"></i>公司地址：'+message.address+'</a\
+                                        <a><i class="bx bx-map"></i>'+message.address+'</a\
                                     </li>\
                                     <li>\
-                                        <a><i class="bx bx-phone-call"></i>联系电话：'+message.phone+'</a>\
+                                        <a><i class="bx bx-phone-call"></i>'+message.phone+'</a>\
                                     </li>\
                                     <li>\
-                                        <a><i class="bx bx-mail-send"></i>电子邮箱：'+message.email+'</a>\
+                                        <a><i class="bx bx-mail-send"></i>'+message.email+'</a>\
                                     </li>'
         $('.mail-call').append(company_message_html)
       })

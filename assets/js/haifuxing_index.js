@@ -1,5 +1,5 @@
-// var host = 'http://yichuang.hsturing.com'
-var host = "http://127.0.0.1:8123"
+var host = 'https://app.haifuxing.com'
+// var host = "http://120.25.165.230:8868/"
 
 ;(function ($) {
   'use strict'
@@ -30,7 +30,7 @@ var host = "http://127.0.0.1:8123"
                                                 <h1>'+banner.main_title+'</h1>\
                                                 <p class="col-lg-8">'+banner.content+'</p>\
                                                 <div class="banner-btn">\
-                                                    <a href="haifuxing_contact.html" class="cmn-btn">开始项目<i class="bx bx-plus"></i></a>\
+                                                    <a href="haifuxing_business.html" class="cmn-btn">了解更多<i class="bx bx-plus"></i></a>\
                                                 </div>\
                                             </div>\
                                         </div>\
@@ -51,7 +51,7 @@ var host = "http://127.0.0.1:8123"
                                                 <h2>'+product.name+'</h2>\
                                                 <p>'+product.abstract+'</p>\
                                             </div>\
-                                            <a href="haifuxing_product_content.html?id='+product.id+'" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
+                                            <a href="#" class="cmn-btn">发现更多<i class="bx bx-plus"></i>\
                                             </a>\
                                         </div>\
                                     </div>'
