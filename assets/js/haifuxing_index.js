@@ -1,4 +1,4 @@
-var host = 'https://app.haifuxing.com'
+var host = "https://app.haifuxing.com"
 // var host = "http://120.25.165.230:8868/"
 
 ;(function ($) {
