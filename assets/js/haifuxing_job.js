@@ -88,7 +88,7 @@
 
     CreateJob(job_type_id)
 
-    $(".job_type_a job_type_link").on('click',function(){
+    $(".job_type_link .job_type_a").on('click',function(){
         $('.job').empty() // 清空元素内容
         job_type_id = $(this).attr("id").match(/\d/g)[0]
         console.log(job_type_id)
