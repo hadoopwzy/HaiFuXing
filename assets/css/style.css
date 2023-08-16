@@ -777,6 +777,7 @@ button:focus {
   transition: 0.5s all ease;
   overflow: hidden;
   background-color: #fff;
+  height: 280px;
 }
 
 .service-item:hover {
