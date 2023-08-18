@@ -291,6 +291,10 @@ button:focus {
 
 /*-- End Navbar --*/
 /*-- Banner --*/
+/* .index_banner{
+  position: absolute;
+} */
+
 .banner-area {
   height: 920px;
   position: relative;
@@ -560,7 +564,7 @@ button:focus {
   font-size: 20px;
   margin-bottom: 25px;
   word-wrap: break-word;
-  width: 59%;
+  width: 550px;
 }
 
 .banner-content .banner-btn .banner-btn-right {
